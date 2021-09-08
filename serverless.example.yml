@@ -1,0 +1,256 @@
+service:
+  name: presto-app
+  awsKmsKeyArn: <aws-key-arn>
+
+frameworkVersion: ">=1.2.0 <3.0.0"
+# Exclude un-needed files to reduce deployment package size
+package:
+  exclude:
+    - '!dist/**'
+# These are serverless plugins
+plugins:
+  - serverless-single-page-app-plugin
+  - serverless-sync-s3buckets
+  - serverless-cloudfront-invalidate
+  - serverless-apigw-binary
+  - serverless-presto
+# Custom variables that are used by this serverless configuration
+custom:
+  app: <app-name>
+  distributions:
+    production: '<prod-cf-distribution-id>'
+    dev: '<dev-cf-distribution-id>'
+  s3Bucket: ${self:service}-${opt:stage, self:provider.stage}
+  s3LocalPath: /dist
+  syncS3Buckets:
+    - bucketName: ${self:custom.s3Bucket}
+      localDir: /dist
+  cloudfrontInvalidate:
+    distributionId: ${self:custom.distributions.${opt:stage, self:provider.stage}}
+    items:
+      - /${self:custom.app}/index.html
+  largeRequestBucket: ${self:service}-${opt:stage, self:provider.stage}-largerequests
+  debugBucket: ${self:service}-${opt:stage, self:provider.stage}-debug
+  attachmentBucket: ${self:service}-${opt:stage, self:provider.stage}-attachments
+  apigwBinary:
+    types:
+      - "multipart/form-data"
+  prestodebug: false
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
+  stackTags:
+    Name: ${self:service}
+  environment:
+    # These are environment variables that the lambda functions use
+    CF_URL:
+      # This gets the cloudfront domain name
+      Fn::GetAtt:
+        - WebAppCloudFrontDistribution
+        - DomainName
+    stage: ${opt:stage, self:provider.stage}
+    sharedSecret: <kms-encrypted-shared-secret>
+    canvasCredentials: <kms-encrypted-canvas-token>
+    largeRequestBucket: ${self:custom.largeRequestBucket}
+    debugBucket: ${self:custom.debugBucket}
+    corsDomains: http://localhost:8080,http://127.0.0.1:8080 # This is a list of EXTRA CORS domains for testing
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:GetObject
+      Resource: "arn:aws:s3:::${self:custom.largeRequestBucket}/*"
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:GetObject
+        - s3:PutObjectAcl
+      Resource: "arn:aws:s3:::${self:custom.debugBucket}/*"
+# These are the lambda functions that we will use for Presto
+functions:
+  ltixml:
+    handler: functions/ltixml.LTI
+    events:
+      - http:
+          path: lti.xml
+          method: any
+  pkCanvasCors:
+    handler: functions/pkcors.exec
+    events:
+      - http:
+          path: pkcanvas/{url+}
+          method: options
+      - http:
+          path: pkcanvas
+          method: options
+  pkCanvas:
+    handler: functions/pkcanvas.canvas
+    timeout: 30
+    events:
+      - http:
+          path: pkcanvas/{url+}
+          method: any
+      - http:
+          path: pkcanvas
+          method: any
+  canvasS3Cors:
+    handler: functions/pkcors.exec
+    events:
+      - http:
+          path: canvass3/{url+}
+          method: options
+      - http:
+          path: canvass3
+          method: options
+  canvasS3:
+    handler: functions/canvas.canvass3
+    timeout: 30
+    events:
+      - http:
+          path: canvass3/{url+}
+          method: any
+      - http:
+          path: canvass3
+          method: any
+  proxyCors:
+    handler: functions/pkcors.exec
+    events:
+      - http:
+          path: proxy
+          method: options
+  proxy:
+    handler: functions/proxy.proxy
+    events:
+      - http:
+          path: proxy
+          method: any
+  proxyFile:
+    handler: functions/proxy.proxyFile
+    events:
+      - http:
+          path: proxyFile
+          method: any
+  LTI:
+    handler: functions/ltihandler.LTI
+    events:
+      - http:
+          path: consumeLTI
+          method: POST
+          cors: true
+  empty:
+    handler: functions/ltihandler.empty
+    events:
+      - http:
+          path: emtpy
+          method: GET
+          cors: true
+# These are all the S3 buckets and CloudFront configuration
+resources:
+  Resources:
+    DebugBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.debugBucket}
+        CorsConfiguration:
+          CorsRules:
+            -
+              AllowedOrigins:
+                - '*'
+              AllowedHeaders:
+                - '*'
+              AllowedMethods:
+                - GET
+                - PUT
+                - POST
+                - DELETE
+                - HEAD
+              MaxAge: 3000
+    LargeRequestBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.largeRequestBucket}
+        CorsConfiguration:
+          CorsRules:
+            -
+              AllowedOrigins:
+                - '*'
+              AllowedHeaders:
+                - '*'
+              AllowedMethods:
+                - GET
+                - PUT
+                - POST
+                - DELETE
+                - HEAD
+              MaxAge: 3000
+    WebAppS3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.s3Bucket}
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: index.html
+    WebAppS3BucketPolicy:
+      Type: AWS::S3::BucketPolicy
+      Properties:
+        Bucket:
+          Ref: WebAppS3Bucket
+        PolicyDocument:
+          Statement:
+            - Sid: PublicReadGetObject
+              Effect: Allow
+              Principal: "*"
+              Action:
+              - s3:GetObject
+              Resource: arn:aws:s3:::${self:custom.s3Bucket}/*
+    WebAppCloudFrontDistribution:
+      Type: AWS::CloudFront::Distribution
+      Properties:
+        DistributionConfig:
+          Origins:
+            - DomainName: ${self:custom.s3Bucket}.s3.amazonaws.com
+              Id: WebApp
+              CustomOriginConfig:
+                HTTPPort: 80
+                HTTPSPort: 443
+                OriginProtocolPolicy: https-only
+          Enabled: 'true'
+          DefaultRootObject: index.html
+          CustomErrorResponses:
+            - ErrorCode: 404
+              ResponseCode: 200
+              ResponsePagePath: /index.html
+          DefaultCacheBehavior:
+            AllowedMethods:
+              - DELETE
+              - GET
+              - HEAD
+              - OPTIONS
+              - PATCH
+              - POST
+              - PUT
+            TargetOriginId: WebApp
+            ForwardedValues:
+              QueryString: 'false'
+              Cookies:
+                Forward: none
+            ViewerProtocolPolicy: redirect-to-https
+          ViewerCertificate:
+            CloudFrontDefaultCertificate: 'true'
+  Outputs:
+    LargeRequestBucketName:
+      Value:
+        Ref: LargeRequestBucket
+    DebugBucketName:
+      Value:
+        Ref: DebugBucket
+    WebAppS3BucketOutput:
+      Value:
+        'Ref': WebAppS3Bucket
+    WebAppCloudFrontDistributionOutput:
+      Value:
+        'Fn::GetAtt': [ WebAppCloudFrontDistribution, DomainName ]

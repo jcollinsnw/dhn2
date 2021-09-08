@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -e "\x1b[33mPresto:\x1b[0m Installing prerequisites..." && npm install && echo -e "\x1b[33mPresto:\x1b[0m Opening configuration wizard..." && npm run configure && echo -e "\x1b[33mPresto:\x1b[0m Running deployment script..." && npm run deploy

@@ -1,0 +1,12 @@
+{
+  "short_name": "Discussion Hero",
+  "name": "Discussion Hero",
+  "icons": [
+    {
+      "src": "static/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone"
+}

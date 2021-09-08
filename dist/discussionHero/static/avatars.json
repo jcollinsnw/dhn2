@@ -1,0 +1,182 @@
+[
+  {
+    "type": "heroes", 
+    "name": "Gene Mask", 
+    "avatar": "static/avatars/50.svg", 
+    "description": "You were always different \u2013 never one of the crowd \u2013 and it turns out, you're a genetic mutation, with amazing powers that make you both hated and feared! Evolutionary Powers - You have the innate ability to transform and evolve your body in order to adapt to and survive any environment, no matter how dangerous! Now, you protect Johannesburg from barking dogs, while also battling the evil plans of Adam and the Adamantines! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Quantum Steak", 
+    "avatar": "static/avatars/49.svg", 
+    "description": "A humble worker at the CERN Laboratories, your life was normal - until you accidentally fell into the particle accelerator in the middle of a vital experiment! The accident has resulted in you gaining strange new powers - but now, the government is keen to hunt you down and exploit you! Teleportation - You are able to instantly transport yourself from one location to another!  and... Meat Control - Your powers give you control of the element of meat! You can manipulate and form raw meat into any shape you desire, or flatten your enemies with a tidal wave of offal! Now, you protect Jawanga Gorge from sinister magicians, while also battling the evil plans of Captain Death! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Sensational Beast", 
+    "avatar": "static/avatars/48.svg", 
+    "description": "You were given an ancient African fetish-mask as a gift - but it turned out to have unexpected powers! Now, whenever you don the mask, you gain the mask's abilities and can fight crime - but beware the mysterious villains out to steal the mask back for evil purposes! Animal Control - You can bring any animal under your complete control, and can extend your power to hundreds of potential subjects! Now, you protect Lahore from mobsters, while also battling the evil plans of Jesse Flint! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Lightning Mask", 
+    "avatar": "static/avatars/47.svg", 
+    "description": "As a child, you survived an accident involving an electrical pylon! Now, you discover that the accident has unleashed strange powers in your body. Will you use them for good, or evil? Electrical Powers - You have the ability to control and manipulate electrical power, whether it's overloading any technological device, or summoning a 10,000 volt charge of lightning to devastate your opponents! Now, you protect Budapest from the Mafia, while also battling the evil plans of Benny Da Vinci! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Incredible Mask", 
+    "avatar": "static/avatars/46.svg", 
+    "description": "You are one of the ancient Olympian Gods, sent to Earth to learn a lesson in humility! Now, you must fight alongside humanity to stand a chance of regaining your power! Indestructibility - Your skin is unbreakable, making you impervious to bullets or the most powerful explosives! Now, you protect Tokyo from rogue angels, while also battling the evil plans of Admiral Beefheart! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Sapphire Glacier", 
+    "avatar": "static/avatars/45.svg", 
+    "description": "Your parents nearly froze to death in a snowstorm, but you were able to save them by accidentally calling on the powers of the mighty Ice Gods! Now, you must do the Ice Gods' bidding, while also searching for a way of freeing yourself from their control! Generating and Controlling Ice - Your powers mean you can generate and control ice - whether it's blasts of super-chilled air, walls of solid ice, freezing your enemies solid, or simply making sure you're never without a chilled drink. Now, you protect Dogtown from large gangs of worrying clowns, while also battling the evil plans of The Funkmeister! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "Warp Mask", 
+    "avatar": "static/avatars/44.svg", 
+    "description": "You are an alien, brought to Earth and trapped here by accident. Now, you must use your innate abilities to battle the forces of darkness, while trying to find your way home! Dimensional Gateways - Your powers give you the ability to create portals, opening doorways in reality to any location that you can clearly visualise - nowhere is off-limits to you! Now, you protect Sydney from ninjas, while also battling the evil plans of The Geisha! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "Luna Shadow", 
+    "avatar": "static/avatars/43.svg", 
+    "description": "After a mysterious encounter with an alien spacecraft, you have now found yourself possessing incredible powers! You must use these abilities wisely, while trying to unravel the true reasons for your strange new gifts\u2026 Gravity Manipulation - You have the ability to control gravity itself, making objects or people heavier or lighter, or even turning everything around you into zero-gravity! and... Shadow Control - You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation (travelling from one shadow to another)! Now, you protect Moscow from the Yakuza, while also battling the evil plans of Rama! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "Arachno Shadow", 
+    "avatar": "static/avatars/42.svg", 
+    "description": "You gained your abilities after being bitten by a radioactive spider! Spider Transformation - You have the ability to transform yourself into a super-powered spider, with increased strength, speed and intelligence! and... Shadow Control - You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation (travelling from one shadow to another)! Now, you protect Rome from violent husbands, while also battling the evil plans of The Ellipse! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Incredible Shadow", 
+    "avatar": "static/avatars/41.svg", 
+    "description": "You are one of the ancient Olympian Gods, sent to Earth to learn a lesson in humility! Now, you must fight alongside humanity to stand a chance of regaining your power! Indestructibility - Your skin is unbreakable, making you impervious to bullets or the most powerful explosives!  and... Shadow Control - You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation (travelling from one shadow to another)! Now, you protect Tomorrow City from dangerous mime artists, while also battling the evil plans of The Men from K.I.L.L.! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Flamingo Shadow", 
+    "avatar": "static/avatars/40.svg", 
+    "description": "You gained your abilities after being pecked by a radioactive flamingo! Flamicanthropy - You have the ability to transform yourself into a flamingo - but be careful, because the transformation can easily happen at unpredictable moments! and... Shadow Control - You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation (travelling from one shadow to another)! Now, you protect Bangkok from unlicensed dental practitioners, while also battling the evil plans of Il Zuko! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Silk Mask", 
+    "avatar": "static/avatars/39.svg", 
+    "description": "You were an archaeologist, on a voyage into deepest Africa, when one of your discoveries angered the ancient spider gods! Now, you bear the weight of their power, until you find a way of appeasing the mighty deities! Spider Communication - You have the ability to talk to any spider, and you can also see through their eyes and mentally link with them! Now, you protect Midtown USA from parking violations, while also battling the evil plans of Mustapha Jones! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Gold Synapse", 
+    "avatar": "static/avatars/38.svg", 
+    "description": "A close encounter with a meteor transformed you in unexpected ways! Now, you have gained superpowers that grow with power every day, and which help you fight back against the evils of the human world! Empathic - You have the ability to both sense and control the emotions of anyone around you! Now, you protect Budapest from confidence artists, while also battling the evil plans of Captain Death! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Stupendous Tide", 
+    "avatar": "static/avatars/37.svg", 
+    "description": "Abandoned as a child, you grew up with an affinity for water - and then, you discover that you are the long-lost ruler of the underwater kingdom of Atlantis! Now you must fight for control of the world's oceans, while also protecting humanity from evil! Aquatic Powers - You can breathe underwater, swim at incredible speeds, and communicate with undersea life! Now, you protect Shanghai from jewel thieves, while also battling the evil plans of The Abominable Dr Kildare! "
+  }, 
+  {
+    "type": "heroes", 
+    "name": "The Black Warrior", 
+    "avatar": "static/avatars/36.svg", 
+    "description": "You were an amoral super-villain out for yourself until an encounter with a kindly monk made you see the error of your ways! Now you fight for all that is good while trying to escape the shadow of your past! Healing Hands - You have incredible healing powers, meaning you can treat even the most fatal injuries simply by touch! and... Perfect Aim - Your skills and abilities give you perfect aim - it's impossible for you to not hit your target, no matter what weapon you may be using! Now, you protect Osaka from werewolves, while also battling the evil plans of Mr Eskimo! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Dr. Terror", 
+    "avatar": "static/avatars/35.svg", 
+    "description": "You are a technological mastermind who's already invented many startling devices \u2013 but your latest creation has now given you unexpected abilities! Now, you can indulge your darkest desires, while getting back at all the people who double-crossed you on your way to the top... Fear Powers \u2013 You have the ability to instantly instil fear into anyone's mind, from a mild scare to a heart-stopping burst of terror! Now, with the aid of your trusty henchman Skull and your army of Chuck Norris clones, you bring terror and chaos to the streets of San Francisco! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Nycto The Nasty", 
+    "avatar": "static/avatars/34.svg", 
+    "description": "You were a researcher into the effects of earthquakes \u2013 until an unexpected encounter with a mystical rock enfaced you with the world-spirit known as Gaia, but also drove you insane! Now, you embark on a campaign of destruction to wipe the planet clean of the scourge of humanity! Shadow Control \u2013 You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation, travelling from one shadow to another! and... Insanity Powers \u2013 At a glance, you can inflict shattering madness upon anyone you encounter. But use the ability wisely! Now, with the aid of your trusty henchman Boojum McGee and your army of time-travelling Nazi war criminals, you bring terror and chaos to the streets of Paris! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Professor Terrordrome", 
+    "avatar": "static/avatars/33.svg", 
+    "description": "You were a researcher into the effects of earthquakes \u2013 until an unexpected encounter with a mystical rock enfaced you with the world-spirit known as Gaia, but also drove you insane! Now, you embark on a campaign of destruction to wipe the planet clean of the scourge of humanity! Human Lie-Detector \u2013 You can instantly tell whether someone is telling you the truth or lying! and... Fear Powers \u2013 You have the ability to instantly instil fear into anyone's mind, from a mild scare to a heart-stopping burst of terror! Now, with the aid of your trusty henchman Mr Clean and your army of malicious horses, you bring terror and chaos to the streets of Eagle City! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Professor Of Insects", 
+    "avatar": "static/avatars/32.svg", 
+    "description": "You were a normal university professor \u2013 until you cracked a seemingly impossible mathematical conundrum, a feat that unlocked strange and bizarre abilities for you! Now, with your unstoppable brain and lack of morality, your reign of terror can truly begin! Human Lie-Detector \u2013 You can instantly tell whether someone is telling you the truth or lying! and... Insect Control \u2013 You can communicate with and control any insect, summoning swarms of bees, ants or cockroaches to wreak havoc! Now, with the aid of your trusty henchman Monsieur Rabbit and your army of mime artists, you bring terror and chaos to the streets of Midtown USA! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Blue Destroyer", 
+    "avatar": "static/avatars/31.svg", 
+    "description": "Abandoned as a child, you grew up with an affinity for water \u2013 and then, you discover that you are the long-lost ruler of the underwater kingdom of Atlantis! Now, with your strange new powers, you must punish mankind for their arrogance, and embark upon an epic battle to conquer the Earth, preserving the oceans, no matter what the cost! Power of the Atom \u2013 Your abilities give you control over atomic power, meaning you can deliver concussive nuclear force, create or dampen radiation, and generate energy beyond all known limits! Now, with the aid of your trusty henchman Mongo and your army of fast-talking con-artists, you bring terror and chaos to the streets of Lahore! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Laughing Volt", 
+    "avatar": "static/avatars/30.svg", 
+    "description": "You were a normal university professor \u2013 until you cracked a seemingly impossible mathematical conundrum, a feat that unlocked strange and bizarre abilities for you! Now, with your unstoppable brain and lack of morality, your reign of terror can truly begin! Electrical Powers \u2013 You have the ability to control and manipulate electrical power, whether it's overloading any technological device, or summoning a 10,000 volt charge of lightning to devastate your opponents! Now, with the aid of your trusty henchman Bosco and your army of mime artists, you bring terror and chaos to the streets of Olympus City! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Blue Arachno", 
+    "avatar": "static/avatars/29.svg", 
+    "description": "Abandoned as a child, you grew up with an affinity for water \u2013 and then, you discover that you are the long-lost ruler of the underwater kingdom of Atlantis! Now, with your strange new powers, you must punish mankind for their arrogance, and embark upon an epic battle to conquer the Earth, preserving the oceans, no matter what the cost! Spider Transformation \u2013 You have the ability to transform yourself into a super-powered spider, with increased strength, speed and intelligence! Now, with the aid of your trusty henchman Monsieur Rabbit and your army of vicious robots, you bring terror and chaos to the streets of Futureville! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Commander Of Rats", 
+    "avatar": "static/avatars/28.svg", 
+    "description": "A late-night encounter with a mysterious, fatally-wounded oriental stranger results in you being gifted with a mystical scroll that curses you with bizarre new abilities, and an insatiable thirst for power! Rat Control \u2013 At any moment you can summon swarms of rats to do your bidding and spread disease wherever you go! Now, with the aid of your trusty henchman Eduardo La Pouf and your army of corrupt superheroes, you bring terror and chaos to the streets of Roswell, New Mexico! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Razor The Mangler", 
+    "avatar": "static/avatars/27.svg", 
+    "description": "You gained your abilities after being stung by a radioactive scorpion! After failing to prevent the death of your kindly uncle, you turn from the righteous path and instead embrace the ways of crime and evil! With great power comes great profitability! Slicer \u2013 You have the ability to extend sword-like blades from your arms which can cut through any substance! Now, with the aid of your trusty henchman Pinku and your army of hyper-intelligent gorillas, you bring terror and chaos to the streets of Paris! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Commandant Madness", 
+    "avatar": "static/avatars/26.svg", 
+    "description": "You were an astronaut, exposed to space in a near-fatal accident! Now, strange cosmic rays from a nearby anomaly have transformed you, giving you a new and superhuman ability \u2013 and also instilling you with the desire to conquer Earth for your soon-to-arrive alien masters! Insanity Powers \u2013 At a glance, you can inflict shattering madness upon anyone you encounter. But use the ability wisely! Now, with the aid of your trusty henchman Ice and your army of theatrical ghosts, you bring terror and chaos to the streets of Victory City! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Bloody Puppeteer", 
+    "avatar": "static/avatars/25.svg", 
+    "description": "You are a professional thief who's just stolen a weird technological gizmo from a scientist \u2013 only to find that using the device transforms you in a bizarre and amazing way! With your new abilities, you'll be able to conquer the world of crime, as well as maybe getting revenge for that time you were unfairly dumped... Hyper Reflexes \u2013 Your incredibly heightened reflexes make you an unstoppable death machine who can kill entire rooms full of adversaries in seconds! and... Mental Control \u2013 Your immense brainpower gives you the ability to make anyone subservient to your will, no matter how evil your intentions! Now, with the aid of your trusty henchman Boojum McGee and your army of evil dentists, you bring terror and chaos to the streets of Cherryville! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Commander Of Dreams", 
+    "avatar": "static/avatars/24.svg", 
+    "description": "A late-night encounter with a mysterious, fatally-wounded oriental stranger results in you being gifted with a mystical scroll that curses you with bizarre new abilities, and an insatiable thirst for power! Dream Control \u2013 You have the power to enter, explore, manipulate, and control your own or anybody else's dreams! Now, with the aid of your trusty henchman Igor and your army of malicious horses, you bring terror and chaos to the streets of The City of Trees! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Commander Shroud", 
+    "avatar": "static/avatars/23.svg", 
+    "description": "A late-night encounter with a mysterious, fatally-wounded oriental stranger results in you being gifted with a mystical scroll that curses you with bizarre new abilities, and an insatiable thirst for power! Ghost Control \u2013 You can summon anyone from the land of the dead, and get them to do your bidding! Now, with the aid of your trusty henchman Eduardo La Pouf and your army of vicious robots, you bring terror and chaos to the streets of New York! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "Black Pulse", 
+    "avatar": "static/avatars/22.svg", 
+    "description": "You gained your abilities after training overseas with the ancient Shaolin masters, and promptly used their knowledge to embark on the greatest crime spree the world has ever seen! Shadow Control \u2013 You can manipulate and control shadows, using them to hide yourself or even as a mode of transportation, travelling from one shadow to another! and... Electromagnetic Pulse \u2013 You have the ability to project an Electromagnetic Pulse, knocking out any technological devices. The pulses can be targeted, or can stretch across an entire city! Now, with the aid of your trusty henchman Bulk and your army of vicious robots, you bring terror and chaos to the streets of Budapest! "
+  }, 
+  {
+    "type": "villains", 
+    "name": "The Blue Scorpio", 
+    "avatar": "static/avatars/21.svg", 
+    "description": "Abandoned as a child, you grew up with an affinity for water \u2013 and then, you discover that you are the long-lost ruler of the underwater kingdom of Atlantis! Now, with your strange new powers, you must punish mankind for their arrogance, and embark upon an epic battle to conquer the Earth, preserving the oceans, no matter what the cost! A Powerful Stinger \u2013 Your abilities give you a massive scorpion-like stinger that can strike with deadly speed and disable or kill anyone you wish! Now, with the aid of your trusty henchman Anastasia Onatopp and your army of mime artists, you bring terror and chaos to the streets of London! "
+  }
+]
