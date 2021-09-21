@@ -40,6 +40,9 @@ Follow the instructions linked below to install DH/N2 to Canvas. This is the sta
 
 [How do I configure an external app for a course using a URL?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-configure-an-external-app-for-a-course-using-a-URL/ta-p/884)
 
+## Help
+For more help with DH/N2 or you just want to keep up to date with the latest news pertaining to Discussion Hero and Nebula 2, please visit our website at: [discussionhero.northwestern.edu](https://discussionhero.northwestern.edu)
+
 ## About the DH/N2 Team
 
 Discussion Hero and Nebula 2 are jointly developed by Teaching and Learning Technologies in Northwestern IT Services & Support and The School of Professional Studies at [Northwestern](https://northwestern.edu). Creators of this project are Jacob Guerra-Martinez and David Noffs. All software was developed by Jacob Collins. All avatars were designed by Diana Hernandez. Discussion Hero Logos were designed by Patty Chrastka. Documentation was written by Rachel Goc. Special thanks to Dan Murphy, Reba-Anna Lee, Victoria Getis, Erin Green, Reggie Jackson, Jonathan Diehl, Krissy Wilson, Alita Kendrick, and Suzanne Rovani.
