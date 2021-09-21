@@ -23,7 +23,8 @@ The Serverless Framework needs to be configured to your AWS instance by adding A
     ```shell_session
     $ bash scripts/install.sh
     ```
-7. **IMPORTANT:** Wait for the install script to fully complete before closing your console. 
+7. **IMPORTANT:** Wait for the install script to fully complete before closing your console. The install script will output 2 XML configuration URLS. These are the XML Config URLs you will use to install Discussion Hero or Nebula 2 to your Canvas course, account, etc. If you lose these URLs you can recover them by running `npm run status` in your install directory.
+
 ### Important Notes:
 
 * Choosing an **AWS Region** can affect performance of your application. Follow [this guide](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/RegionsAndAZs.html) to determine which region you'd like to deploy DH/N2.
