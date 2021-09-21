@@ -4,6 +4,7 @@
   "description": "Install scripts for Discussion Hero",
   "main": "index.js",
   "scripts": {
+    "status": "node scripts/status.js",
     "pull": "./scripts/pull.sh",
     "configure": "node scripts/configure.js",
     "deploy": "bash scripts/deploy.sh",

@@ -20,10 +20,10 @@ The Serverless Framework needs to be configured to your AWS instance by adding A
 5. Open a terminal or console and change to the directory where the files were un-zipped.
 6. Run the following command in your terminal or console and follow the prompts to install Discussion Hero to your AWS instance. Refer to the important notes below regarding information to be input in the prompts.
 
-```shell_session
-$ bash scripts/install.sh
-```
-
+    ```shell_session
+    $ bash scripts/install.sh
+    ```
+7. **IMPORTANT:** Wait for the install script to fully complete before closing your console. 
 ### Important Notes:
 
 * Choosing an **AWS Region** can affect performance of your application. Follow [this guide](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/RegionsAndAZs.html) to determine which region you'd like to deploy DH/N2.
